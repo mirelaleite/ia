@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Nunito:wght@400;600&display=swap');
+
+:root {
+    --cor-fundo: #f0f9f0;
+    --cor-caixa: #ffffff;
+    --cor-borda: #b3d9b3;
+    --cor-destaque: #4caf50; /* verde vibrante */
+    --cor-texto: #333;
+    --cor-hover: #a5d6a7; /* verde claro */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-image: linear-gradient(135deg, #e8f5e9, #dcedc8);
+}
+
+.caixa-principal {
+    background-color: var(--cor-caixa);
+    border: 2px solid var(--cor-borda);
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.2);
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 16px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    color: var(--cor-destaque);
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.caixa-perguntas {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+button {
+    background-color: var(--cor-hover);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: white;
+}
+
+.caixa-resultado {
+    margin-top: 30px;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--cor-destaque);
+    background-color: #e8f5e9;
+    border: 1px dashed var(--cor-destaque);
+    border-radius: 12px;
+    padding: 20px;
+}
+.caixa-resultado {
+    display: none;
+    /* ... o resto permanece igual ... */
+}
+
+
+.fundo-animado {
+    display: none;
+}
+
+#particulas {
+    display: none;
+}
